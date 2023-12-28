@@ -1,0 +1,105 @@
+---
+import { SITE } from "@config";
+
+
+import ProjectCard from "../components/ProjectCard.astro";
+import Projects from "../layouts/Projects.astro";
+
+import localArithmusicImage from "../assets/images/arithmusic.png";
+import localNimbusImage from "../assets/images/nimbus.png";
+import localAudioFingerPrintImage from "../assets/images/audio-finger-print.png";
+import localSoundRemindererImage from "../assets/images/sound-reminderer.png";
+import localArchEmojisImage from "../assets/images/arch-emojis.png";
+
+---
+
+<Projects frontmatter={{title: SITE.title}}>
+
+    <p class="max-w-3xl p-2 m-0">
+        Here lies various projects I've made over the years
+        to scartch my own curiosities (and I hope yours too).
+    </p>
+
+    <div class="relative flex flex-wrap justify-evenly max-w-6xl">
+        <ProjectCard 
+            title="Nimbus"
+            desc="Aesthetic SoundCloud with aesthetic features"
+            links={{
+                github: "https://github.com/chrisdruta/nimbus",
+            }}
+            image={{
+                src: localNimbusImage,
+                alt: "Picture of Nimbus' layout",
+            }}
+        />
+        <ProjectCard
+            title="Arithmusic",
+            desc="Make music (or laser sounds) with math "
+            links={{
+                github: "https://github.com/chrisdruta/arithmusic",
+                website: "https://chrisdruta.github.io/arithmusic",
+                blog: "/posts/learning-too-much-at-once",
+            }}
+            image={{
+                src: localArithmusicImage,
+                alt: "Picture of Arithmusic graphing some maths"
+            }}
+        />
+        <ProjectCard
+            title="Acoustic fingerprinter"
+            desc="DSP independent study final project (Shazam clone)"
+            links={{
+                github: "https://github.com/chrisdruta/python-acoustic-fingerprinter",
+                report: "https://github.com/chrisdruta/python-acoustic-fingerprinter/blob/master/images/report.pdf"
+            }}
+            image={{
+                src: localAudioFingerPrintImage,
+                alt: "Picture showing frequency peak / signature matching, similar to Shazam",
+            }}
+        />
+        <ProjectCard
+            title="AoE4 Sound Reminder-er"
+            desc="Help remind you to do things in games (like making villagers)"
+            links={{
+                github: "https://github.com/chrisdruta/aoe4-sound-reminder",
+                website: "https://chrisdruta.github.io/aoe4-sound-reminder/",
+            }}
+            image={{
+                src: localSoundRemindererImage,
+                alt: "Picture of AoE4 sound reminderer's UI",
+            }}
+        />
+        <ProjectCard
+            title="arch-linux-apple-emojis"
+            desc="Apple Emojis (iOS 12) for Arch Linux"
+            links={{
+                github: "https://github.com/chrisdruta/arch-linux-apple-emojis",
+            }}
+            image={{
+                src: localArchEmojisImage,
+                alt: "Apple emojis rendered in arch linux terminal",
+            }}
+        />
+        <ProjectCard
+            title="liveframe"
+            desc="Get the latest frame of a youtube live-stream for live backgrounds"
+            links={{
+                github: "https://github.com/chrisdruta/liveframe",
+            }}
+         />
+        <ProjectCard
+            title="rpi-audio-spectrum-visualizer"
+            desc="State-machine LED controller + server/frontend (used for my TV)"
+            links={{
+                github: "https://github.com/chrisdruta/rpi-audio-spectrum-visualizer"
+            }}
+        />
+        <ProjectCard
+            title="dotfiles linux setup"
+            desc="Backup of my dotfiles if you're super curious about what linux tools I've used"
+            links={{
+                github: "https://github.com/chrisdruta/dotfile-backup",
+            }}
+        />
+    </div>
+</Projects>

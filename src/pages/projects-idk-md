@@ -1,0 +1,48 @@
+---
+layout: ../layouts/Projects.astro
+title: "Projects"
+---
+
+### Arithmusic - Make music (or laser sounds) with math!
+
+<a href="https://chrisdruta.github.io/arithmusic/" target="_blank">Website</a>
+<a href="https://github.com/chrisdruta/arithmusic" target="_blank">Github</a>
+<a href="/posts/learning-too-much-at-once">Blog post</a>
+
+<figure>
+    <figcaption>Arithmusic 1.0</figcaption>
+</figure>
+
+**insert pictures and stuff instead, link out to blog posts**
+
+### Nimbus - Aesthetic (unoffical) SoundCloud client with aesthetic features
+
+<a href="https://chrisdruta.github.io/nimbus/" target="_blank">Website</a>
+<a href="https://github.com/chrisdruta/nimbus" target="_blank">Github</a>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/chrisdruta/nimbus/main/readme-scrot.png" />
+    <figcaption>Nimbus v0.1</figcaption>
+</figure>
+
+### Acoustic fingerprinter - DSP independent study final project (Shazam clone)
+
+<a href="https://github.com/chrisdruta/python-acoustic-fingerprinter" target="_blank">Github</a>
+<a href="https://raw.githubusercontent.com/chrisdruta/python-acoustic-fingerprinter/master/images/report.pdf" target="_blank">
+    Report write up
+</a>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/chrisdruta/python-acoustic-fingerprinter/master/images/example.png" height="400px" />
+    <figcaption>Example of how Shazam works</figcaption>
+</figure>
+
+### AoE4 Sound Reminder-er - Help remind you to do things in games (like making villagers)
+
+<figure>
+    <img src="" />
+    <figcaption></figcaption>
+</figure>
+
+### liveframe - Get the latest HD frame of a live youtube stream for desktop backgrounds
+
