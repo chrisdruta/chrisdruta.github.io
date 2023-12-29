@@ -18,6 +18,9 @@ module.exports = {
     },
 
     extend: {
+      colors: {
+        borderAccent: withOpacity("--color-border"),
+      },
       textColor: {
         skin: {
           base: withOpacity("--color-text-base"),
